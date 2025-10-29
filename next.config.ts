@@ -4,6 +4,11 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["lh3.googleusercontent.com"], // 👈 tambahkan domain ini
   },
+  allowedDevOrigins: [
+    "https://linkzz-six.vercel.app",
+    "https://linkzz-git-main-kevz12s-projects.vercel.app",
+    "https://linkzz-lwtcx62ks-kevz12s-projects.vercel.app",
+  ],
 
   async headers() {
     return [
@@ -12,7 +17,10 @@ const nextConfig: NextConfig = {
         source: "/api/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
-          { key: "Access-Control-Allow-Origin", value: "*" }, // Ganti * dengan domain frontend Anda
+          {
+            key: "Access-Control-Allow-Origin",
+            value: "https://linkzz-git-main-kevz12s-projects.vercel.app",
+          },
           {
             key: "Access-Control-Allow-Methods",
             value: "GET,OPTIONS,PATCH,DELETE,POST,PUT",
