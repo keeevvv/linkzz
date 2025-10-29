@@ -12,7 +12,7 @@ export const auth = betterAuth({
     provider: "mysql",
   }),
   trustedOrigins: [
-    "https://linkzz-six.vercel.app/",
+    "https://linkzz-six.vercel.app",
     "linkzz-git-main-kevz12s-projects.vercel.app",
     "linkzz-g82p6kpg3-kevz12s-projects.vercel.app",
   ],
